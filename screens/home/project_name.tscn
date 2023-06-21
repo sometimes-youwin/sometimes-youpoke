@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnhnatmavswc3"]
+
+[ext_resource type="Script" path="res://screens/home/project_name.gd" id="1_ff4v0"]
+
+[node name="ProjectName" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+script = ExtResource("1_ff4v0")
+
+[node name="Display" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 2
+selection_enabled = true
+
+[node name="EntryContainer" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="NameEntry" type="LineEdit" parent="EntryContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OkButton" type="Button" parent="EntryContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "OK"
